@@ -14,7 +14,9 @@ function clearDisplay() {
 
 function calculate() {
   try {
-    display.value = eval(display.value);
+    // Used Function constructor instead of eval for safer evaluation
+    const result = new Function(`return ${display.value}`)();
+    display.value = result;
   } catch (error) {
     display.value = "Error";
   }
