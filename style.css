@@ -12,7 +12,7 @@ body{
     background-color: rgba(0,0,0,0.75);
     border-radius: 25px;
     max-width: 500px;
-    overflow: hidden;  /* Mostly for display, if there is a very long equation  */
+    overflow: hidden;
 }
 
 #display{
